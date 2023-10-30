@@ -12,6 +12,8 @@
 		2092AD262AF0668B009C3B02 /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD252AF0668B009C3B02 /* DogsViewController.swift */; };
 		2092AD2B2AF0668C009C3B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2092AD2A2AF0668C009C3B02 /* Assets.xcassets */; };
 		2092AD2E2AF0668C009C3B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2092AD2C2AF0668C009C3B02 /* LaunchScreen.storyboard */; };
+		2092AD3C2AF06C6D009C3B02 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD3B2AF06C6D009C3B02 /* Endpoint.swift */; };
+		2092AD3F2AF06CE7009C3B02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD3E2AF06CE7009C3B02 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2092AD2A2AF0668C009C3B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2092AD2D2AF0668C009C3B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2092AD2F2AF0668C009C3B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2092AD3B2AF06C6D009C3B02 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2092AD3E2AF06CE7009C3B02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		2092AD202AF0668B009C3B02 /* Dogos */ = {
 			isa = PBXGroup;
 			children = (
+				2092AD3D2AF06CDC009C3B02 /* Core */,
 				2092AD392AF06A02009C3B02 /* Delegates */,
 				2092AD372AF06947009C3B02 /* Resources */,
+				2092AD3A2AF06C2C009C3B02 /* Network */,
 				2092AD352AF06793009C3B02 /* Modules */,
 				2092AD2F2AF0668C009C3B02 /* Info.plist */,
 			);
@@ -102,6 +108,22 @@
 				2092AD232AF0668B009C3B02 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2092AD3A2AF06C2C009C3B02 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2092AD3B2AF06C6D009C3B02 /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2092AD3D2AF06CDC009C3B02 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2092AD3E2AF06CE7009C3B02 /* Constants.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2092AD3F2AF06CE7009C3B02 /* Constants.swift in Sources */,
 				2092AD262AF0668B009C3B02 /* DogsViewController.swift in Sources */,
 				2092AD222AF0668B009C3B02 /* AppDelegate.swift in Sources */,
+				2092AD3C2AF06C6D009C3B02 /* Endpoint.swift in Sources */,
 				2092AD242AF0668B009C3B02 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
