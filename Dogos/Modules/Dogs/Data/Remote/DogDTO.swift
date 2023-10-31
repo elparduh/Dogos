@@ -1,9 +1,5 @@
 import Foundation
 
-struct DogsResponse: Codable {
-    let dogs: [DogDTO]
-}
-
 struct DogDTO : Codable {
   let dogName : String?
   let description : String?

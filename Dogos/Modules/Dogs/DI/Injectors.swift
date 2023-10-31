@@ -1,6 +1,13 @@
 import Foundation
 import UIKit
 
+enum NetworkInjector {
+
+  static func provideAPIClient() -> APIClientProtocol{
+    APIClient()
+  }
+}
+
 enum DogsInjector {
 
   private static func provideDogsDataSourceRemote() -> DogsDataSourceRemote {

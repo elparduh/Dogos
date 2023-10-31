@@ -13,6 +13,6 @@ struct DogsDataSourceRemote: DogsDataSourceRemoteProtocol {
   }
 
   func getDogs() async throws -> [Dog] {
-    try await apiClient.request(endpoint: DogsEndPoint.getDogs, type: DogsResponse.self).asToDomain()
+    try await apiClient.request(endpoint: DogsEndPoint.getDogs, type: [DogDTO].self).asToDomain()
   }
 }
