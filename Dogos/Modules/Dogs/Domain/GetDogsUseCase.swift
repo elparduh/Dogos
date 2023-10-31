@@ -5,7 +5,7 @@ protocol DogsUseCaseProtocol {
   func execute() async -> Result<[Dog], Error>
 }
 
-struct DogsUseCase: DogsUseCaseProtocol {
+struct GetDogsUseCase: DogsUseCaseProtocol {
   var dogsRepositoryProtocol: DogsRepositoryProtocol
   
   init(dogsRepositoryProtocol: DogsRepositoryProtocol) {
