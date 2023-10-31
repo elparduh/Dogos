@@ -28,6 +28,7 @@
 		2092AD662AF0C32D009C3B02 /* DogsUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD652AF0C32D009C3B02 /* DogsUseCaseProvider.swift */; };
 		2092AD682AF0C654009C3B02 /* DogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD672AF0C654009C3B02 /* DogsPresenter.swift */; };
 		2092AD6E2AF13E9F009C3B02 /* DogsAssemblerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD6D2AF13E9F009C3B02 /* DogsAssemblerInjector.swift */; };
+		2092AD702AF15255009C3B02 /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD6F2AF15255009C3B02 /* DogsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		2092AD652AF0C32D009C3B02 /* DogsUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUseCaseProvider.swift; sourceTree = "<group>"; };
 		2092AD672AF0C654009C3B02 /* DogsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPresenter.swift; sourceTree = "<group>"; };
 		2092AD6D2AF13E9F009C3B02 /* DogsAssemblerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAssemblerInjector.swift; sourceTree = "<group>"; };
+		2092AD6F2AF15255009C3B02 /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			children = (
 				2092AD672AF0C654009C3B02 /* DogsPresenter.swift */,
 				2092AD252AF0668B009C3B02 /* DogsViewController.swift */,
+				2092AD6F2AF15255009C3B02 /* DogsViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				2092AD6E2AF13E9F009C3B02 /* DogsAssemblerInjector.swift in Sources */,
 				2092AD412AF06F5B009C3B02 /* HttpResponseStatus.swift in Sources */,
 				2092AD442AF07046009C3B02 /* Extensions.swift in Sources */,
+				2092AD702AF15255009C3B02 /* DogsViewModel.swift in Sources */,
 				2092AD222AF0668B009C3B02 /* AppDelegate.swift in Sources */,
 				2092AD662AF0C32D009C3B02 /* DogsUseCaseProvider.swift in Sources */,
 				2092AD582AF08155009C3B02 /* DogModels.swift in Sources */,
