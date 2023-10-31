@@ -21,6 +21,10 @@
 		2092AD542AF0810F009C3B02 /* DogDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD532AF0810F009C3B02 /* DogDTO.swift */; };
 		2092AD582AF08155009C3B02 /* DogModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD572AF08155009C3B02 /* DogModels.swift */; };
 		2092AD5A2AF08204009C3B02 /* DogDTO+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD592AF08204009C3B02 /* DogDTO+Mapper.swift */; };
+		2092AD5D2AF086AD009C3B02 /* DogsDataSourceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD5C2AF086AD009C3B02 /* DogsDataSourceRemote.swift */; };
+		2092AD5F2AF087A1009C3B02 /* DogsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD5E2AF087A1009C3B02 /* DogsEndPoint.swift */; };
+		2092AD612AF08ABC009C3B02 /* DogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD602AF08ABC009C3B02 /* DogsRepository.swift */; };
+		2092AD632AF08EAF009C3B02 /* DogsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD622AF08EAF009C3B02 /* DogsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		2092AD532AF0810F009C3B02 /* DogDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDTO.swift; sourceTree = "<group>"; };
 		2092AD572AF08155009C3B02 /* DogModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModels.swift; sourceTree = "<group>"; };
 		2092AD592AF08204009C3B02 /* DogDTO+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogDTO+Mapper.swift"; sourceTree = "<group>"; };
+		2092AD5C2AF086AD009C3B02 /* DogsDataSourceRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsDataSourceRemote.swift; sourceTree = "<group>"; };
+		2092AD5E2AF087A1009C3B02 /* DogsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsEndPoint.swift; sourceTree = "<group>"; };
+		2092AD602AF08ABC009C3B02 /* DogsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRepository.swift; sourceTree = "<group>"; };
+		2092AD622AF08EAF009C3B02 /* DogsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,7 @@
 			children = (
 				2092AD522AF080FF009C3B02 /* Data */,
 				2092AD552AF0813E009C3B02 /* Domain */,
-				2092AD252AF0668B009C3B02 /* DogsViewController.swift */,
+				2092AD642AF0905F009C3B02 /* Presentation */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -149,8 +157,8 @@
 		2092AD522AF080FF009C3B02 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				2092AD532AF0810F009C3B02 /* DogDTO.swift */,
-				2092AD592AF08204009C3B02 /* DogDTO+Mapper.swift */,
+				2092AD5B2AF08693009C3B02 /* Remote */,
+				2092AD602AF08ABC009C3B02 /* DogsRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -159,8 +167,28 @@
 			isa = PBXGroup;
 			children = (
 				2092AD572AF08155009C3B02 /* DogModels.swift */,
+				2092AD622AF08EAF009C3B02 /* DogsUseCase.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		2092AD5B2AF08693009C3B02 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2092AD5E2AF087A1009C3B02 /* DogsEndPoint.swift */,
+				2092AD532AF0810F009C3B02 /* DogDTO.swift */,
+				2092AD592AF08204009C3B02 /* DogDTO+Mapper.swift */,
+				2092AD5C2AF086AD009C3B02 /* DogsDataSourceRemote.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		2092AD642AF0905F009C3B02 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2092AD252AF0668B009C3B02 /* DogsViewController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,10 +263,14 @@
 			files = (
 				2092AD3F2AF06CE7009C3B02 /* Constants.swift in Sources */,
 				2092AD262AF0668B009C3B02 /* DogsViewController.swift in Sources */,
+				2092AD632AF08EAF009C3B02 /* DogsUseCase.swift in Sources */,
 				2092AD412AF06F5B009C3B02 /* HttpResponseStatus.swift in Sources */,
 				2092AD442AF07046009C3B02 /* Extensions.swift in Sources */,
 				2092AD222AF0668B009C3B02 /* AppDelegate.swift in Sources */,
 				2092AD582AF08155009C3B02 /* DogModels.swift in Sources */,
+				2092AD612AF08ABC009C3B02 /* DogsRepository.swift in Sources */,
+				2092AD5D2AF086AD009C3B02 /* DogsDataSourceRemote.swift in Sources */,
+				2092AD5F2AF087A1009C3B02 /* DogsEndPoint.swift in Sources */,
 				2092AD462AF070A6009C3B02 /* APIError.swift in Sources */,
 				2092AD542AF0810F009C3B02 /* DogDTO.swift in Sources */,
 				2092AD3C2AF06C6D009C3B02 /* Endpoint.swift in Sources */,
