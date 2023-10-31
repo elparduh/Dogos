@@ -17,9 +17,9 @@ class DogsViewModel: DogsViewModelProtocol {
     dogItems.count
   }
 
-  init(dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol, state: PassthroughSubject<StateController, Never>) {
+  init(dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol) {
     self.dogsUseCaseProviderProtocol = dogsUseCaseProviderProtocol
-    self.state = state
+    self.state = PassthroughSubject<StateController, Never>()
   }
 
   func viewDidLoad() {

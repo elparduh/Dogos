@@ -1,13 +1,13 @@
 import Foundation
 
-extension DogsResponse {
+extension Array where Element == DogDTO {
 
-    func asToDomain() -> [Dog] {
-      dogs.compactMap { dogDTO in
-        Dog(name: dogDTO.dogName ?? .empty,
-            description: dogDTO.description ?? .empty,
-            age: dogDTO.age ?? .zero,
-            image: dogDTO.image ?? .empty)
-      }
+  func asToDomain() -> [Dog] {
+    self.compactMap { dogDTO in
+      Dog(name: dogDTO.dogName ?? .empty,
+          description: dogDTO.description ?? .empty,
+          age: dogDTO.age ?? .zero,
+          image: dogDTO.image ?? .empty)
     }
+  }
 }
