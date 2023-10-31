@@ -2,15 +2,14 @@ import UIKit
 import Combine
 
 class DogsViewController: UIViewController {
-  
-  private let assemblerInjector = DogsAssemblerInjector()
-  private var viewModel: DogsViewModel!
   private var cancellable = Set<AnyCancellable>()
-
+  var viewModel: DogsViewModel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     stateController()
     viewModel.viewDidLoad()
+    view.backgroundColor = .systemBackground
   }
 
   private func stateController() {
