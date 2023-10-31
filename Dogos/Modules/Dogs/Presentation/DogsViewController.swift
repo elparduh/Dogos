@@ -7,9 +7,9 @@ class DogsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    view.backgroundColor = .systemBackground
     stateController()
     viewModel.viewDidLoad()
-    view.backgroundColor = .systemBackground
   }
 
   private func stateController() {
