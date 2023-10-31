@@ -24,7 +24,9 @@
 		2092AD5D2AF086AD009C3B02 /* DogsDataSourceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD5C2AF086AD009C3B02 /* DogsDataSourceRemote.swift */; };
 		2092AD5F2AF087A1009C3B02 /* DogsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD5E2AF087A1009C3B02 /* DogsEndPoint.swift */; };
 		2092AD612AF08ABC009C3B02 /* DogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD602AF08ABC009C3B02 /* DogsRepository.swift */; };
-		2092AD632AF08EAF009C3B02 /* DogsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD622AF08EAF009C3B02 /* DogsUseCase.swift */; };
+		2092AD632AF08EAF009C3B02 /* GetDogsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD622AF08EAF009C3B02 /* GetDogsUseCase.swift */; };
+		2092AD662AF0C32D009C3B02 /* DogsUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD652AF0C32D009C3B02 /* DogsUseCaseProvider.swift */; };
+		2092AD682AF0C654009C3B02 /* DogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD672AF0C654009C3B02 /* DogsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +49,9 @@
 		2092AD5C2AF086AD009C3B02 /* DogsDataSourceRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsDataSourceRemote.swift; sourceTree = "<group>"; };
 		2092AD5E2AF087A1009C3B02 /* DogsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsEndPoint.swift; sourceTree = "<group>"; };
 		2092AD602AF08ABC009C3B02 /* DogsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRepository.swift; sourceTree = "<group>"; };
-		2092AD622AF08EAF009C3B02 /* DogsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUseCase.swift; sourceTree = "<group>"; };
+		2092AD622AF08EAF009C3B02 /* GetDogsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDogsUseCase.swift; sourceTree = "<group>"; };
+		2092AD652AF0C32D009C3B02 /* DogsUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUseCaseProvider.swift; sourceTree = "<group>"; };
+		2092AD672AF0C654009C3B02 /* DogsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				2092AD572AF08155009C3B02 /* DogModels.swift */,
-				2092AD622AF08EAF009C3B02 /* DogsUseCase.swift */,
+				2092AD622AF08EAF009C3B02 /* GetDogsUseCase.swift */,
+				2092AD652AF0C32D009C3B02 /* DogsUseCaseProvider.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 		2092AD642AF0905F009C3B02 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				2092AD672AF0C654009C3B02 /* DogsPresenter.swift */,
 				2092AD252AF0668B009C3B02 /* DogsViewController.swift */,
 			);
 			path = Presentation;
@@ -263,10 +269,12 @@
 			files = (
 				2092AD3F2AF06CE7009C3B02 /* Constants.swift in Sources */,
 				2092AD262AF0668B009C3B02 /* DogsViewController.swift in Sources */,
-				2092AD632AF08EAF009C3B02 /* DogsUseCase.swift in Sources */,
+				2092AD632AF08EAF009C3B02 /* GetDogsUseCase.swift in Sources */,
+				2092AD682AF0C654009C3B02 /* DogsPresenter.swift in Sources */,
 				2092AD412AF06F5B009C3B02 /* HttpResponseStatus.swift in Sources */,
 				2092AD442AF07046009C3B02 /* Extensions.swift in Sources */,
 				2092AD222AF0668B009C3B02 /* AppDelegate.swift in Sources */,
+				2092AD662AF0C32D009C3B02 /* DogsUseCaseProvider.swift in Sources */,
 				2092AD582AF08155009C3B02 /* DogModels.swift in Sources */,
 				2092AD612AF08ABC009C3B02 /* DogsRepository.swift in Sources */,
 				2092AD5D2AF086AD009C3B02 /* DogsDataSourceRemote.swift in Sources */,
