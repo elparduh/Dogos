@@ -5,7 +5,9 @@ protocol DogsViewModelProtocol {
   var state: PassthroughSubject<StateController, Never> { get }
   var dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol { get }
   var dogsItemsCount: Int { get }
-  func viewDidLoad()
+  func fetchDogs()
+  func getDogItem(indexPath: IndexPath) -> Dog
+  func getItemDogViewModel(indexPath: IndexPath) -> ItemDogViewModel
 }
 
 class DogsViewModel: DogsViewModelProtocol {
@@ -22,7 +24,7 @@ class DogsViewModel: DogsViewModelProtocol {
     self.state = PassthroughSubject<StateController, Never>()
   }
 
-  func viewDidLoad() {
+  func fetchDogs() {
     state.send(.loading)
     Task {
       let result = await dogsUseCaseProviderProtocol.getDogsUseCaseProvider().execute()
@@ -38,6 +40,15 @@ class DogsViewModel: DogsViewModelProtocol {
       case .failure(let error):
           state.send(.fail(error: error.localizedDescription))
       }
+  }
+
+  func getDogItem(indexPath: IndexPath) -> Dog {
+    dogItems[indexPath.row]
+  }
+
+  func getItemDogViewModel(indexPath: IndexPath) -> ItemDogViewModel {
+    let dogItem = dogItems[indexPath.row]
+    return ItemDogViewModel(dogItem)
   }
 }
 

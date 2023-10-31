@@ -7,9 +7,13 @@ class DogsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = .systemBackground
+    configUI()
     stateController()
-    viewModel.viewDidLoad()
+    viewModel.fetchDogs()
+  }
+
+  private func configUI() {
+      view.backgroundColor = .systemBackground
   }
 
   private func stateController() {
@@ -27,6 +31,5 @@ class DogsViewController: UIViewController {
         }
       }.store(in: &cancellable)
   }
-
 }
 

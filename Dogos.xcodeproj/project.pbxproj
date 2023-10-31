@@ -29,6 +29,7 @@
 		2092AD702AF15255009C3B02 /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD6F2AF15255009C3B02 /* DogsViewModel.swift */; };
 		2092AD722AF180CC009C3B02 /* Injectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD712AF180CC009C3B02 /* Injectors.swift */; };
 		2092AD772AF1A055009C3B02 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD762AF1A055009C3B02 /* UIColor+Extension.swift */; };
+		2092AD7A2AF1AA65009C3B02 /* ItemDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD792AF1AA64009C3B02 /* ItemDogViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		2092AD6F2AF15255009C3B02 /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
 		2092AD712AF180CC009C3B02 /* Injectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectors.swift; sourceTree = "<group>"; };
 		2092AD762AF1A055009C3B02 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2092AD792AF1AA64009C3B02 /* ItemDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDogViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			children = (
 				2092AD252AF0668B009C3B02 /* DogsViewController.swift */,
 				2092AD6F2AF15255009C3B02 /* DogsViewModel.swift */,
+				2092AD792AF1AA64009C3B02 /* ItemDogViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				2092AD582AF08155009C3B02 /* DogModels.swift in Sources */,
 				2092AD612AF08ABC009C3B02 /* DogsRepository.swift in Sources */,
 				2092AD5D2AF086AD009C3B02 /* DogsDataSourceRemote.swift in Sources */,
+				2092AD7A2AF1AA65009C3B02 /* ItemDogViewModel.swift in Sources */,
 				2092AD5F2AF087A1009C3B02 /* DogsEndPoint.swift in Sources */,
 				2092AD462AF070A6009C3B02 /* APIError.swift in Sources */,
 				2092AD542AF0810F009C3B02 /* DogDTO.swift in Sources */,
