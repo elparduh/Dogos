@@ -1,7 +1,7 @@
 import Foundation
 
 protocol DogsDependencyAssembler {
-  func resolve(dogsUIProtocol: DogsUIProtocol) -> DogsPresenterProtocol
+  func resolve(dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol) -> DogsViewModelProtocol
   func resolve() -> DogsUseCaseProviderProtocol
   func resolve() -> DogsRepositoryProtocol
   func resolve() -> DogsDataSourceRemoteProtocol
@@ -10,8 +10,8 @@ protocol DogsDependencyAssembler {
 
 extension DogsDependencyAssembler {
 
-  func resolve(dogsUIProtocol: DogsUIProtocol) -> DogsPresenterProtocol {
-    DogsPresenter(dogsUseCaseProviderProtocol: resolve(), dogsUIProtocol: dogsUIProtocol)
+  func resolve(dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol) -> DogsViewModelProtocol {
+    DogsViewModel(dogsUseCaseProviderProtocol: resolve())
   }
 
   func resolve() -> DogsUseCaseProviderProtocol {
