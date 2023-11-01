@@ -6,9 +6,9 @@ class DogViewCell: UICollectionViewCell, ReusableView {
   private let imageView = UIImageView()
   private let containerView = UIView()
   private let mainStackView = UIStackView()
-  private let titleLabel = UILabel()
-  private let subtitleLabel = UILabel()
+  private let nameLabel = UILabel()
   private let descriptionLabel = UILabel()
+  private let ageLabel = UILabel()
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -24,9 +24,9 @@ class DogViewCell: UICollectionViewCell, ReusableView {
 
   func bind(viewModel: ItemDogViewModel) {
     imageView.loadImageUsingCache(withUrl: viewModel.image)
-    titleLabel.text = viewModel.name
-    subtitleLabel.text = viewModel.description
-    descriptionLabel.text = viewModel.age
+    nameLabel.text = viewModel.name
+    descriptionLabel.text = viewModel.description
+    ageLabel.text = viewModel.age
   }
 }
 
@@ -36,9 +36,9 @@ extension DogViewCell: CustomViewBuildable {
     contentView.addSubview(containerView)
     contentView.addSubview(imageView)
     containerView.addSubview(mainStackView)
-    mainStackView.addArrangedSubviews([titleLabel,
-                                       subtitleLabel,
-                                       descriptionLabel])
+    mainStackView.addArrangedSubviews([nameLabel,
+                                       descriptionLabel,
+                                       ageLabel])
   }
 
   func addConstraints() {
@@ -103,12 +103,12 @@ extension DogViewCell: CustomViewBuildable {
 
   private func configureSubtitleLabel() {
     //subtitleLabel.setStyle(with: .bodyMedium(with: .font28))
-    subtitleLabel.numberOfLines = .zero
+    descriptionLabel.numberOfLines = .zero
   }
 
   private func configureDescriptionLabel() {
     //descriptionLabel.setStyle(with: .bodyMedium())
-    descriptionLabel.numberOfLines = .zero
+    ageLabel.numberOfLines = .zero
   }
 
 }
