@@ -30,6 +30,10 @@
 		2092AD722AF180CC009C3B02 /* Injectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD712AF180CC009C3B02 /* Injectors.swift */; };
 		2092AD772AF1A055009C3B02 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD762AF1A055009C3B02 /* UIColor+Extension.swift */; };
 		2092AD7A2AF1AA65009C3B02 /* ItemDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD792AF1AA64009C3B02 /* ItemDogViewModel.swift */; };
+		2092AD7D2AF1D288009C3B02 /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD7C2AF1D288009C3B02 /* DogCell.swift */; };
+		2092AD812AF1D637009C3B02 /* ViewBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD802AF1D636009C3B02 /* ViewBuildable.swift */; };
+		2092AD832AF1D6DB009C3B02 /* CustomViewBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD822AF1D6DB009C3B02 /* CustomViewBuildable.swift */; };
+		2092AD852AF1D8F9009C3B02 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD842AF1D8F9009C3B02 /* Cell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		2092AD712AF180CC009C3B02 /* Injectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectors.swift; sourceTree = "<group>"; };
 		2092AD762AF1A055009C3B02 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		2092AD792AF1AA64009C3B02 /* ItemDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDogViewModel.swift; sourceTree = "<group>"; };
+		2092AD7C2AF1D288009C3B02 /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
+		2092AD802AF1D636009C3B02 /* ViewBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuildable.swift; sourceTree = "<group>"; };
+		2092AD822AF1D6DB009C3B02 /* CustomViewBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBuildable.swift; sourceTree = "<group>"; };
+		2092AD842AF1D8F9009C3B02 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +167,10 @@
 		2092AD3D2AF06CDC009C3B02 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2092AD7F2AF1D616009C3B02 /* Protocols */,
+				2092AD7E2AF1D5FD009C3B02 /* Extensions */,
+				2092AD7B2AF1D249009C3B02 /* Views */,
 				2092AD3E2AF06CE7009C3B02 /* Constants.swift */,
-				2092AD432AF07046009C3B02 /* String+Extension.swift */,
-				2092AD762AF1A055009C3B02 /* UIColor+Extension.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -212,6 +221,33 @@
 				2092AD712AF180CC009C3B02 /* Injectors.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		2092AD7B2AF1D249009C3B02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2092AD7C2AF1D288009C3B02 /* DogCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2092AD7E2AF1D5FD009C3B02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2092AD762AF1A055009C3B02 /* UIColor+Extension.swift */,
+				2092AD432AF07046009C3B02 /* String+Extension.swift */,
+				2092AD842AF1D8F9009C3B02 /* Cell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2092AD7F2AF1D616009C3B02 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2092AD802AF1D636009C3B02 /* ViewBuildable.swift */,
+				2092AD822AF1D6DB009C3B02 /* CustomViewBuildable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,16 +322,20 @@
 			files = (
 				2092AD3F2AF06CE7009C3B02 /* Constants.swift in Sources */,
 				2092AD262AF0668B009C3B02 /* DogsViewController.swift in Sources */,
+				2092AD7D2AF1D288009C3B02 /* DogCell.swift in Sources */,
 				2092AD632AF08EAF009C3B02 /* GetDogsUseCase.swift in Sources */,
 				2092AD412AF06F5B009C3B02 /* HttpResponseStatus.swift in Sources */,
 				2092AD442AF07046009C3B02 /* String+Extension.swift in Sources */,
 				2092AD702AF15255009C3B02 /* DogsViewModel.swift in Sources */,
+				2092AD852AF1D8F9009C3B02 /* Cell+Extension.swift in Sources */,
 				2092AD222AF0668B009C3B02 /* AppDelegate.swift in Sources */,
 				2092AD722AF180CC009C3B02 /* Injectors.swift in Sources */,
 				2092AD662AF0C32D009C3B02 /* DogsUseCaseProvider.swift in Sources */,
 				2092AD582AF08155009C3B02 /* DogModels.swift in Sources */,
+				2092AD812AF1D637009C3B02 /* ViewBuildable.swift in Sources */,
 				2092AD612AF08ABC009C3B02 /* DogsRepository.swift in Sources */,
 				2092AD5D2AF086AD009C3B02 /* DogsDataSourceRemote.swift in Sources */,
+				2092AD832AF1D6DB009C3B02 /* CustomViewBuildable.swift in Sources */,
 				2092AD7A2AF1AA65009C3B02 /* ItemDogViewModel.swift in Sources */,
 				2092AD5F2AF087A1009C3B02 /* DogsEndPoint.swift in Sources */,
 				2092AD462AF070A6009C3B02 /* APIError.swift in Sources */,
