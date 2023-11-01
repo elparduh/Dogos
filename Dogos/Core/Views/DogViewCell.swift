@@ -26,7 +26,7 @@ class DogViewCell: UICollectionViewCell, ReusableView {
     imageView.loadImageUsingCache(withUrl: viewModel.image)
     nameLabel.text = viewModel.name
     descriptionLabel.text = viewModel.description
-    ageLabel.text = viewModel.age
+    ageLabel.text = "Almost \(viewModel.age) years"
   }
 }
 
@@ -44,11 +44,11 @@ extension DogViewCell: CustomViewBuildable {
   func addConstraints() {
     configureContentView()
     configureImageView()
-    configurecontainerView()
+    configureContainerView()
     configureMainStackView()
-    configureTitleLabel()
-    configureSubtitleLabel()
+    configureNameLabel()
     configureDescriptionLabel()
+    configureAgeLabel()
   }
 
   private func configureContentView() {
@@ -69,7 +69,7 @@ extension DogViewCell: CustomViewBuildable {
     ])
   }
 
-  private func configurecontainerView() {
+  private func configureContainerView() {
     containerView.disableAutoresizingMaskIntoConstraints()
     containerView.roundedStyle(cornerRadius: .point16, backgroundColor: .white)
 
@@ -97,18 +97,19 @@ extension DogViewCell: CustomViewBuildable {
     ])
   }
 
-  private func configureTitleLabel() {
-    //titleLabel.setStyle(with: .bodyMedium())
-  }
-
-  private func configureSubtitleLabel() {
-    //subtitleLabel.setStyle(with: .bodyMedium(with: .font28))
-    descriptionLabel.numberOfLines = .zero
+  private func configureNameLabel() {
+    nameLabel.textColor = .darkColor
+    nameLabel.font = UIFont.boldSystemFont(ofSize: .point18)
   }
 
   private func configureDescriptionLabel() {
-    //descriptionLabel.setStyle(with: .bodyMedium())
-    ageLabel.numberOfLines = .zero
+    descriptionLabel.textColor = .grayColor
+    descriptionLabel.numberOfLines = .zero
+    descriptionLabel.textAlignment = .justified
+    descriptionLabel.font = UIFont.systemFont(ofSize: .point16)
   }
 
+  private func configureAgeLabel() {
+    ageLabel.font = UIFont.boldSystemFont(ofSize: .point12)
+  }
 }
