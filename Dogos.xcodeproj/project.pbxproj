@@ -30,7 +30,7 @@
 		2092AD722AF180CC009C3B02 /* Injectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD712AF180CC009C3B02 /* Injectors.swift */; };
 		2092AD772AF1A055009C3B02 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD762AF1A055009C3B02 /* UIColor+Extension.swift */; };
 		2092AD7A2AF1AA65009C3B02 /* ItemDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD792AF1AA64009C3B02 /* ItemDogViewModel.swift */; };
-		2092AD7D2AF1D288009C3B02 /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD7C2AF1D288009C3B02 /* DogCell.swift */; };
+		2092AD7D2AF1D288009C3B02 /* DogViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD7C2AF1D288009C3B02 /* DogViewCell.swift */; };
 		2092AD812AF1D637009C3B02 /* ViewBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD802AF1D636009C3B02 /* ViewBuildable.swift */; };
 		2092AD832AF1D6DB009C3B02 /* CustomViewBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD822AF1D6DB009C3B02 /* CustomViewBuildable.swift */; };
 		2092AD852AF1D8F9009C3B02 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD842AF1D8F9009C3B02 /* Cell+Extension.swift */; };
@@ -67,7 +67,7 @@
 		2092AD712AF180CC009C3B02 /* Injectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectors.swift; sourceTree = "<group>"; };
 		2092AD762AF1A055009C3B02 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		2092AD792AF1AA64009C3B02 /* ItemDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDogViewModel.swift; sourceTree = "<group>"; };
-		2092AD7C2AF1D288009C3B02 /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
+		2092AD7C2AF1D288009C3B02 /* DogViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewCell.swift; sourceTree = "<group>"; };
 		2092AD802AF1D636009C3B02 /* ViewBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuildable.swift; sourceTree = "<group>"; };
 		2092AD822AF1D6DB009C3B02 /* CustomViewBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBuildable.swift; sourceTree = "<group>"; };
 		2092AD842AF1D8F9009C3B02 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 		2092AD7B2AF1D249009C3B02 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2092AD7C2AF1D288009C3B02 /* DogCell.swift */,
+				2092AD7C2AF1D288009C3B02 /* DogViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 				2092AD8F2AF29DD4009C3B02 /* UIImageView+Extension.swift in Sources */,
 				2092AD3F2AF06CE7009C3B02 /* Constants.swift in Sources */,
 				2092AD262AF0668B009C3B02 /* DogsViewController.swift in Sources */,
-				2092AD7D2AF1D288009C3B02 /* DogCell.swift in Sources */,
+				2092AD7D2AF1D288009C3B02 /* DogViewCell.swift in Sources */,
 				2092AD632AF08EAF009C3B02 /* GetDogsUseCase.swift in Sources */,
 				2092AD412AF06F5B009C3B02 /* HttpResponseStatus.swift in Sources */,
 				2092AD442AF07046009C3B02 /* String+Extension.swift in Sources */,

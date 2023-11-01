@@ -44,7 +44,7 @@ class DogsViewController: UICollectionViewController {
   }
 
   private func configCollectionView() {
-      collectionView.register(DogCell.self, forCellWithReuseIdentifier: DogCell.reuseIdentifier)
+      collectionView.register(DogViewCell.self, forCellWithReuseIdentifier: DogViewCell.reuseIdentifier)
   }
 }
 
@@ -53,13 +53,13 @@ extension DogsViewController {
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
       guard
           let cell = collectionView.dequeueReusableCell(
-              withReuseIdentifier: DogCell.reuseIdentifier,
+              withReuseIdentifier: DogViewCell.reuseIdentifier,
               for: indexPath
-          ) as? DogCell
+          ) as? DogViewCell
       else { return UICollectionViewCell() }
 
       let viewModelCell = viewModel.getItemDogViewModel(indexPath: indexPath)
-      cell.configData(viewModel: viewModelCell)
+      cell.bind(viewModel: viewModelCell)
 
       return cell
   }
