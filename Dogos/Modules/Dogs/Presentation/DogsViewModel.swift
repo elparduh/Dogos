@@ -7,7 +7,7 @@ protocol DogsViewModelProtocol {
   var dogsItemsCount: Int { get }
   func fetchDogs()
   func getDogItem(indexPath: IndexPath) -> Dog
-  func getItemDogViewModel(indexPath: IndexPath) -> ItemDogViewModel
+  func getItemDogViewModel(indexPath: IndexPath) -> UiDogModel
 }
 
 class DogsViewModel: DogsViewModelProtocol {
@@ -46,9 +46,9 @@ class DogsViewModel: DogsViewModelProtocol {
     dogItems[indexPath.row]
   }
 
-  func getItemDogViewModel(indexPath: IndexPath) -> ItemDogViewModel {
+  func getItemDogViewModel(indexPath: IndexPath) -> UiDogModel {
     let dogItem = dogItems[indexPath.row]
-    return ItemDogViewModel(dogItem)
+    return UiDogModel(dogItem)
   }
 }
 

@@ -1,6 +1,6 @@
 import Foundation
 
-struct ItemDogViewModel {
+struct UiDogModel {
   private let dogItem: Dog
 
   init(_ dogItem: Dog) {
