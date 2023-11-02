@@ -1,5 +1,14 @@
 ## :scroll: Dogos / Clean Architecture and MVVM
 Is an app to show a list of characters from the movie: "Isle of Dogs".This project is built under SOLID principles, clean architecture, modular architecture and MVVM in the presentation layer. It uses UIKit and Combine framework for presentation. Also It uses Implementing an API client with Swift's async/await functionality.
+## :loudspeaker: Description
+Project specs:
+- Minumun Deployment target: iOS 15.0
+- 100% Swift & UIkit
+- Image caching.
+- iOS SDKs: Combine
+- Supported: iPhone & iPad
+- Orientation: Portrait
+- Dependencies: [Toast](https://github.com/scalessec/Toast-Swift)
 ## :art: UI 
  iPhone SE | iPhone 15 PRO MAX
 --- | --- 
