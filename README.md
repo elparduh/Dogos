@@ -6,8 +6,8 @@ This project is built under SOLID principles, clean architecture, modular archit
 Project specs:
 - Minumun Deployment target: iOS 15.0
 - 100% Swift & UIkit
-- Image caching.
-- iOS SDKs: Combine
+- Image caching
+- iOS Components: Combine and Swift Concurrency
 - Supported: iPhone & iPad
 - Orientation: Portrait
 - Dependencies: [Toast](https://github.com/scalessec/Toast-Swift)
