@@ -223,9 +223,9 @@
 			children = (
 				2092AD7B2AF1D249009C3B02 /* Cells */,
 				2092AD252AF0668B009C3B02 /* DogsViewController.swift */,
+				2092AD9B2AF3590C009C3B02 /* DogsViewController+Layout.swift */,
 				2092AD6F2AF15255009C3B02 /* DogsViewModel.swift */,
 				2092AD792AF1AA64009C3B02 /* UiDogModel.swift */,
-				2092AD9B2AF3590C009C3B02 /* DogsViewController+Layout.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -530,6 +530,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = parduh.Dogos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -557,6 +560,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = parduh.Dogos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
