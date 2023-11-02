@@ -9,6 +9,20 @@ Project specs:
 - Supported: iPhone & iPad
 - Orientation: Portrait
 - Dependencies: [Toast](https://github.com/scalessec/Toast-Swift)
+- Presentation Layer:
+    - It uses MVVM for presentation layer.
+    - Also it uses dependency injection to inject dependencies to the view and the view model.
+    - The presentation layer has its own view entities different than domain entities (UIModel).
+- Domain layer:
+    - Business logic layer.
+    - Dependency inversion to abstract domain layer from the data repositories.
+    - Each use case is a reusable and independent component that executes an specific business logic.
+    - Domain layer has its own domain entities different than view o data entities.
+- Data layer:
+    - Dependency inversion to communicate with Domain layer.
+    - It uses the repository pattern. The repository pattern adds an abstraction layer over the the data sources from which the use cases get the data. With repository pattern, you can query your model objects from different data sources.
+    - Business logic shouldn’t know where the data comes from.
+    - Data layer has its own data entities different than domain entities.
 ## :art: UI 
  iPhone SE | iPhone 15 PRO MAX
 --- | --- 
