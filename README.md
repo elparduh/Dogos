@@ -1,4 +1,7 @@
 ## :scroll: Dogos / Clean Architecture and MVVM
+
+<img src="https://github.com/elparduh/Dogos/assets/12547614/aa298537-874c-47da-844d-fdda1ebe68d5" height="100" width="100">
+  
 Is an app to show a list of characters from the movie: "Isle of Dogs".
   
 This project is built under SOLID principles, clean architecture, modular architecture and MVVM in the presentation layer. It uses UIKit and Combine framework for presentation. Also It uses Implementing an API client with Swift's async/await functionality.
