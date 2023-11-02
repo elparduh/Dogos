@@ -37,7 +37,6 @@
 		2092AD872AF1DE1B009C3B02 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD862AF1DE1B009C3B02 /* UIStackView+Extension.swift */; };
 		2092AD892AF1DF30009C3B02 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD882AF1DF30009C3B02 /* UIView+Extension.swift */; };
 		2092AD8B2AF1DF9A009C3B02 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD8A2AF1DF9A009C3B02 /* CGFloat+Extension.swift */; };
-		2092AD8D2AF1E1B0009C3B02 /* NSLayoutConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD8C2AF1E1B0009C3B02 /* NSLayoutConstraint+Extension.swift */; };
 		2092AD8F2AF29DD4009C3B02 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD8E2AF29DD4009C3B02 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +73,6 @@
 		2092AD862AF1DE1B009C3B02 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		2092AD882AF1DF30009C3B02 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		2092AD8A2AF1DF9A009C3B02 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
-		2092AD8C2AF1E1B0009C3B02 /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
 		2092AD8E2AF29DD4009C3B02 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,7 +248,6 @@
 				2092AD862AF1DE1B009C3B02 /* UIStackView+Extension.swift */,
 				2092AD882AF1DF30009C3B02 /* UIView+Extension.swift */,
 				2092AD8A2AF1DF9A009C3B02 /* CGFloat+Extension.swift */,
-				2092AD8C2AF1E1B0009C3B02 /* NSLayoutConstraint+Extension.swift */,
 				2092AD8E2AF29DD4009C3B02 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
@@ -354,7 +351,6 @@
 				2092AD5D2AF086AD009C3B02 /* DogsDataSourceRemote.swift in Sources */,
 				2092AD832AF1D6DB009C3B02 /* CustomViewBuildable.swift in Sources */,
 				2092AD7A2AF1AA65009C3B02 /* UiDogModel.swift in Sources */,
-				2092AD8D2AF1E1B0009C3B02 /* NSLayoutConstraint+Extension.swift in Sources */,
 				2092AD5F2AF087A1009C3B02 /* DogsEndPoint.swift in Sources */,
 				2092AD462AF070A6009C3B02 /* APIError.swift in Sources */,
 				2092AD542AF0810F009C3B02 /* DogDTO.swift in Sources */,
