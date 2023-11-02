@@ -9,6 +9,8 @@ Project specs:
 - Supported: iPhone & iPad
 - Orientation: Portrait
 - Dependencies: [Toast](https://github.com/scalessec/Toast-Swift)
+  
+The layers that compose this project are: 
 - Presentation Layer:
     - It uses MVVM for presentation layer.
     - Also it uses dependency injection to inject dependencies to the view and the view model.
