@@ -38,7 +38,7 @@ I've also created a module called "Network".
 ## 💙 How do test it?
 - Use Git clone command: ```git clone https://github.com/elparduh/Dogos.git```.
 - Open the project on Xcode with Swift 5.
-- Click the Run button in your project’s toolbar.
+- Click the Run button in the project’s toolbar.
 ## :bell: TODOs
 - Unit testing
 - Offline mode
