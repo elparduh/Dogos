@@ -25,6 +25,10 @@ The layers that compose this project are:
     - It uses the repository pattern. The repository pattern adds an abstraction layer over the the data sources from which the use cases get the data. With repository pattern, you can query your model objects from different data sources.
     - Business logic shouldn’t know where the data comes from.
     - Data layer has its own data entities different than domain entities.(DTO)
+
+I've also created a module called "Network".
+- Networking layer:
+    - This module is only accessible from the data layer and it's works with with Swift's async/await.
 ## :art: UI 
  iPhone SE | iPhone 15 PRO MAX
 --- | --- 
