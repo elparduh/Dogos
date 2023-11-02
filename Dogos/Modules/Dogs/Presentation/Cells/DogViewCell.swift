@@ -22,11 +22,11 @@ class DogViewCell: UICollectionViewCell, ReusableView {
     addConstraints()
   }
 
-  func bind(viewModel: ItemDogViewModel) {
-    imageView.loadImageUsingCache(withUrl: viewModel.image)
-    nameLabel.text = viewModel.name
-    descriptionLabel.text = viewModel.description
-    ageLabel.text = "Almost \(viewModel.age) years"
+  func bind(_ uiDogModel: UiDogModel) {
+    imageView.loadImageUsingCache(withUrl: uiDogModel.image)
+    nameLabel.text = uiDogModel.name
+    descriptionLabel.text = uiDogModel.description
+    ageLabel.text = "Almost \(uiDogModel.age) years"
   }
 }
 

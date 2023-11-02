@@ -23,7 +23,7 @@ class DogsViewController: UICollectionViewController {
   }
 
   private func configUI() {
-    self.title = Constants.host
+    self.title = Constants.title
     self.view.backgroundColor = .blue
   }
 
@@ -59,8 +59,8 @@ extension DogsViewController {
       ) as? DogViewCell
     else { return UICollectionViewCell() }
 
-    let viewModelCell = viewModel.getItemDogViewModel(indexPath: indexPath)
-    cell.bind(viewModel: viewModelCell)
+    let uiItem = viewModel.getItemDogViewModel(indexPath: indexPath)
+    cell.bind(uiItem)
 
     return cell
   }
