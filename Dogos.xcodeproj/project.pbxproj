@@ -41,6 +41,7 @@
 		2092AD952AF352F7009C3B02 /* UIActivityIndicatorView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD942AF352F7009C3B02 /* UIActivityIndicatorView+Extension.swift */; };
 		2092AD972AF35651009C3B02 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD962AF35651009C3B02 /* UICollectionView+Extension.swift */; };
 		2092AD9C2AF3590C009C3B02 /* DogsViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD9B2AF3590C009C3B02 /* DogsViewController+Layout.swift */; };
+		2092AD9F2AF36773009C3B02 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 2092AD9E2AF36773009C3B02 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2092AD9F2AF36773009C3B02 /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +289,9 @@
 			dependencies = (
 			);
 			name = Dogos;
+			packageProductDependencies = (
+				2092AD9E2AF36773009C3B02 /* Toast */,
+			);
 			productName = Dogos;
 			productReference = 2092AD1E2AF0668B009C3B02 /* Dogos.app */;
 			productType = "com.apple.product-type.application";
@@ -315,6 +320,9 @@
 				Base,
 			);
 			mainGroup = 2092AD152AF0668B009C3B02;
+			packageReferences = (
+				2092AD9D2AF36773009C3B02 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 2092AD1F2AF0668B009C3B02 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2092AD9D2AF36773009C3B02 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2092AD9E2AF36773009C3B02 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2092AD9D2AF36773009C3B02 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2092AD162AF0668B009C3B02 /* Project object */;
 }
