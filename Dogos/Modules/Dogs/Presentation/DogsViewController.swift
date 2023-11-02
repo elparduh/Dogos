@@ -1,5 +1,6 @@
 import UIKit
 import Combine
+import Toast
 
 class DogsViewController: UIViewController {
 
@@ -34,8 +35,9 @@ class DogsViewController: UIViewController {
           self.dogsCollectionView.reloadData()
         case .loading:
           self.activityIndicatorView.start()
-        case .fail(error: _):
+        case .fail(error: let error):
           self.activityIndicatorView.stop()
+          self.view.makeToast(error, duration: 5.0, position: .bottom)
         }
       }.store(in: &cancellable)
   }
