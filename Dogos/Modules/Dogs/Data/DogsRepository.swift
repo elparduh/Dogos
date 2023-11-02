@@ -6,6 +6,7 @@ protocol DogsRepositoryProtocol {
 }
 
 struct DogsRepository: DogsRepositoryProtocol {
+
   var dogsDataSourceRemoteProtocol: DogsDataSourceRemoteProtocol
 
   init(dogsDataSourceRemoteProtocol: DogsDataSourceRemoteProtocol) {

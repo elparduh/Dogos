@@ -6,6 +6,7 @@ protocol DogsDataSourceRemoteProtocol {
 }
 
 struct DogsDataSourceRemote: DogsDataSourceRemoteProtocol {
+
   var apiClient: APIClientProtocol
 
   init(apiClient: APIClientProtocol) {

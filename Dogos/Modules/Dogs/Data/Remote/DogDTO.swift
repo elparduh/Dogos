@@ -1,10 +1,11 @@
 import Foundation
 
-struct DogDTO : Codable {
-  let dogName : String?
-  let description : String?
-  let age : Int?
-  let image : String?
+struct DogDTO: Codable {
+  
+  let dogName: String?
+  let description: String?
+  let age: Int?
+  let image: String?
 
   enum CodingKeys: String, CodingKey {
 

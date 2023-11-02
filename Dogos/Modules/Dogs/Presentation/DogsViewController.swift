@@ -4,10 +4,10 @@ import Toast
 
 class DogsViewController: UIViewController {
 
+  private var cancellable = Set<AnyCancellable>()
   let dogsCollectionView = UICollectionView(frame: .zero,
                                             collectionViewLayout: UICollectionViewFlowLayout())
   let activityIndicatorView = UIActivityIndicatorView()
-  private var cancellable = Set<AnyCancellable>()
   var viewModel: DogsViewModel!
 
   override func viewDidLoad() {

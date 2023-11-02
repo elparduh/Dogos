@@ -6,6 +6,7 @@ protocol DogsUseCaseProtocol {
 }
 
 struct GetDogsUseCase: DogsUseCaseProtocol {
+  
   var dogsRepositoryProtocol: DogsRepositoryProtocol
   
   init(dogsRepositoryProtocol: DogsRepositoryProtocol) {

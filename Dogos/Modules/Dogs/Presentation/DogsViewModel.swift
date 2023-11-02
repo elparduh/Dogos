@@ -11,6 +11,7 @@ protocol DogsViewModelProtocol {
 }
 
 class DogsViewModel: DogsViewModelProtocol {
+  
   private var dogItems: [Dog] = []
   var dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol
   var state: PassthroughSubject<StateController, Never>

@@ -38,6 +38,6 @@ extension DogsViewController: UICollectionViewDelegateFlowLayout {
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-      UIEdgeInsets(top: .point16, left: .point16, bottom: .point16, right: .point16)
+      UIEdgeInsets(top: .point0, left: .point10, bottom: .point0, right: .point10)
     }
 }

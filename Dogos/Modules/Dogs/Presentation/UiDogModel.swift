@@ -1,6 +1,7 @@
 import Foundation
 
 struct UiDogModel {
+  
   private let dogItem: Dog
 
   init(_ dogItem: Dog) {
