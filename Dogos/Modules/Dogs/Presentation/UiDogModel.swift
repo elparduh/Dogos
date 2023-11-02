@@ -1,6 +1,8 @@
 import Foundation
 
-struct UiDogModel {
+struct UiDogModel: Identifiable, Hashable {
+  
+  var id = UUID()
   private let dogItem: Dog
 
   init(_ dogItem: Dog) {

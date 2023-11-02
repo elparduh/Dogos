@@ -1,6 +1,6 @@
 import Foundation
 
-struct Dog {
+struct Dog: Hashable {
   let name: String
   let description: String
   let age: Int
