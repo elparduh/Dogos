@@ -23,7 +23,7 @@ class DogViewCell: UICollectionViewCell, ReusableView {
   }
 
   func bind(_ uiDogModel: UiDogModel) {
-    imageView.loadImageUsingCache(withUrl: uiDogModel.image)
+    imageView.loadImage(withUrl: uiDogModel.image)
     nameLabel.text = uiDogModel.name
     descriptionLabel.text = uiDogModel.description
     ageLabel.text = "Almost \(uiDogModel.age) years"
@@ -42,17 +42,12 @@ extension DogViewCell: CustomViewBuildable {
   }
 
   func addConstraints() {
-    configureContentView()
     configureImageView()
     configureContainerView()
     configureMainStackView()
     configureNameLabel()
     configureDescriptionLabel()
     configureAgeLabel()
-  }
-
-  private func configureContentView() {
-    contentView.backgroundColor = .clear
   }
 
   private func configureImageView() {
@@ -86,7 +81,7 @@ extension DogViewCell: CustomViewBuildable {
     mainStackView.axis = .vertical
     mainStackView.spacing = .point8
     mainStackView.alignment = .leading
-    mainStackView.configureLayoutMargins(left: .point32)
+    mainStackView.configureLayoutMargins(left: .point32, right: .point8)
     mainStackView.backgroundColor = .white
     mainStackView.layer.cornerRadius = .point8
 

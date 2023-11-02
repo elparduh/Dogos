@@ -38,7 +38,7 @@ enum DogsInjector {
   }
 
   static func provideDogsViewController() -> DogsViewController {
-    let dogsViewController = DogsViewController(layout: makeLayout())
+    let dogsViewController = DogsViewController()
     let dogsViewModel = provideDogsViewModel()
     dogsViewController.viewModel = dogsViewModel
     return dogsViewController

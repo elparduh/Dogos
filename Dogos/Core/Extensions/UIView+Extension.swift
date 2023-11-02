@@ -13,6 +13,14 @@ extension UIView {
       self.layer.backgroundColor = backgroundColor.cgColor
   }
 
+  func show() {
+      self.isHidden = false
+  }
+
+  func hide() {
+      self.isHidden = true
+  }
+  
   func pinToEdges(superView: UIView) {
       self.disableAutoresizingMaskIntoConstraints()
       NSLayoutConstraint.activate([
