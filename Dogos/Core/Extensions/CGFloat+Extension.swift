@@ -68,4 +68,5 @@ extension CGFloat {
   static var point95: CGFloat { return 95 }
   static var point96: CGFloat { return 96 }
   static var point100: CGFloat { return 100 }
+  static var point300: CGFloat { return 300 }
 }
