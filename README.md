@@ -1,5 +1,5 @@
-# Dogos
-Is an app to show a list of characters from the movie: "Isle of Dogs"
+## :scroll: Dogos / Clean Architecture and MVVM
+Is an app to show a list of characters from the movie: "Isle of Dogs".This project is built under SOLID principles, clean architecture, modular architecture and MVVM in the presentation layer. It uses UIKit and Combine framework for presentation. Also It uses Implementing an API client with Swift's async/await functionality.
 ## :art: UI 
  iPhone SE | iPhone 15 PRO MAX
 --- | --- 
