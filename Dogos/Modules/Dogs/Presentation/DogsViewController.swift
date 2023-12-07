@@ -58,3 +58,10 @@ extension DogsViewController: UICollectionViewDataSource {
     return cell
   }
 }
+
+extension DogsViewController {
+    
+    private enum DogsSection {
+        case main
+    }
+}
