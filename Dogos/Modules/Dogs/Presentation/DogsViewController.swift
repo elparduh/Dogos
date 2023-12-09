@@ -36,9 +36,7 @@ class DogsViewController: UIViewController {
                 switch state {
                 case .success:
                     self.activityIndicatorView.stop()
-                    //self.dogsCollectionView.reloadData()
-                    let data = self.viewModel.getDogItems()
-                    print(data)
+                    self.applyDogsDataSourceSnapshot(self.viewModel.getDogItems())
                 case .loading:
                     self.activityIndicatorView.start()
                 case .fail(error: let error):
@@ -68,6 +66,13 @@ extension DogsViewController {
         let cell: DogViewCell = collectionView.dequeueReusableCell(for: indexPath)
         cell.bind(dog)
         return cell
+    }
+    
+    private func applyDogsDataSourceSnapshot(_ dogs: [UiDogModel]) {
+        dogsSnapshot.deleteAllItemsIfNeeded()
+        dogsSnapshot.appendSectionIfNeeded(.main)
+        dogsSnapshot.appendItems(dogs, toSection: .main)
+        dogsDataSource.apply(dogsSnapshot)
     }
     
     private enum DogsSection {
