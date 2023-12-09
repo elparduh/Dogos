@@ -42,6 +42,9 @@
 		2092AD972AF35651009C3B02 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD962AF35651009C3B02 /* UICollectionView+Extension.swift */; };
 		2092AD9C2AF3590C009C3B02 /* DogsViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AD9B2AF3590C009C3B02 /* DogsViewController+Layout.swift */; };
 		2092AD9F2AF36773009C3B02 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 2092AD9E2AF36773009C3B02 /* Toast */; };
+		D39F481C2B24BDD900AEAF3A /* NSCollectionLayoutItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F481B2B24BDD900AEAF3A /* NSCollectionLayoutItem+Extension.swift */; };
+		D39F481E2B24BE5800AEAF3A /* NSCollectionLayoutSection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F481D2B24BE5800AEAF3A /* NSCollectionLayoutSection+Extension.swift */; };
+		D39F48202B24BEF000AEAF3A /* NSDiffableDataSourceSnapshot+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F481F2B24BEF000AEAF3A /* NSDiffableDataSourceSnapshot+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,9 @@
 		2092AD942AF352F7009C3B02 /* UIActivityIndicatorView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Extension.swift"; sourceTree = "<group>"; };
 		2092AD962AF35651009C3B02 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		2092AD9B2AF3590C009C3B02 /* DogsViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogsViewController+Layout.swift"; sourceTree = "<group>"; };
+		D39F481B2B24BDD900AEAF3A /* NSCollectionLayoutItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutItem+Extension.swift"; sourceTree = "<group>"; };
+		D39F481D2B24BE5800AEAF3A /* NSCollectionLayoutSection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+Extension.swift"; sourceTree = "<group>"; };
+		D39F481F2B24BEF000AEAF3A /* NSDiffableDataSourceSnapshot+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDiffableDataSourceSnapshot+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +266,9 @@
 				2092AD8E2AF29DD4009C3B02 /* UIImageView+Extension.swift */,
 				2092AD942AF352F7009C3B02 /* UIActivityIndicatorView+Extension.swift */,
 				2092AD962AF35651009C3B02 /* UICollectionView+Extension.swift */,
+				D39F481B2B24BDD900AEAF3A /* NSCollectionLayoutItem+Extension.swift */,
+				D39F481D2B24BE5800AEAF3A /* NSCollectionLayoutSection+Extension.swift */,
+				D39F481F2B24BEF000AEAF3A /* NSDiffableDataSourceSnapshot+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +363,7 @@
 				2092AD3F2AF06CE7009C3B02 /* Constants.swift in Sources */,
 				2092AD262AF0668B009C3B02 /* DogsViewController.swift in Sources */,
 				2092AD972AF35651009C3B02 /* UICollectionView+Extension.swift in Sources */,
+				D39F48202B24BEF000AEAF3A /* NSDiffableDataSourceSnapshot+Extension.swift in Sources */,
 				2092AD7D2AF1D288009C3B02 /* DogViewCell.swift in Sources */,
 				2092AD632AF08EAF009C3B02 /* GetDogsUseCase.swift in Sources */,
 				2092AD412AF06F5B009C3B02 /* HttpResponseStatus.swift in Sources */,
@@ -369,6 +379,7 @@
 				2092AD812AF1D637009C3B02 /* ViewBuildable.swift in Sources */,
 				2092AD612AF08ABC009C3B02 /* DogsRepository.swift in Sources */,
 				2092AD5D2AF086AD009C3B02 /* DogsDataSourceRemote.swift in Sources */,
+				D39F481E2B24BE5800AEAF3A /* NSCollectionLayoutSection+Extension.swift in Sources */,
 				2092AD832AF1D6DB009C3B02 /* CustomViewBuildable.swift in Sources */,
 				2092AD7A2AF1AA65009C3B02 /* UiDogModel.swift in Sources */,
 				2092AD5F2AF087A1009C3B02 /* DogsEndPoint.swift in Sources */,
@@ -378,6 +389,7 @@
 				2092AD242AF0668B009C3B02 /* SceneDelegate.swift in Sources */,
 				2092AD492AF072A8009C3B02 /* APIClient.swift in Sources */,
 				2092AD872AF1DE1B009C3B02 /* UIStackView+Extension.swift in Sources */,
+				D39F481C2B24BDD900AEAF3A /* NSCollectionLayoutItem+Extension.swift in Sources */,
 				2092AD5A2AF08204009C3B02 /* DogDTO+Mapper.swift in Sources */,
 				2092AD8B2AF1DF9A009C3B02 /* CGFloat+Extension.swift in Sources */,
 				2092AD772AF1A055009C3B02 /* UIColor+Extension.swift in Sources */,

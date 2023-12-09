@@ -14,13 +14,12 @@ extension DogsViewController: ViewBuildable {
     configureActivityIndicatorView(view)
   }
   
-  private func configureDogsCollectionView(_ layoutGuide: UILayoutGuide) {
-    dogsCollectionView.pinToEdges(layoutGuide: layoutGuide)
-    dogsCollectionView.backgroundColor = .lightColor
-    dogsCollectionView.register(DogViewCell.self)
-    dogsCollectionView.delegate = self
-    dogsCollectionView.dataSource = self
-  }
+    private func configureDogsCollectionView(_ layoutGuide: UILayoutGuide) {
+        dogsCollectionView.pinToEdges(layoutGuide: layoutGuide)
+        dogsCollectionView.backgroundColor = .lightColor
+        dogsCollectionView.collectionViewLayout = createDogsLayout()
+        dogsCollectionView.register(DogViewCell.self)
+    }
 
   private func configureActivityIndicatorView(_ view: UIView) {
       activityIndicatorView.pinToEdges(superView: view)
@@ -29,15 +28,15 @@ extension DogsViewController: ViewBuildable {
   }
 }
 
-extension DogsViewController: UICollectionViewDelegateFlowLayout {
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-      let collectionViewWidth = dogsCollectionView.frame.size.width - .point16
-        let cellViewWidth = collectionViewWidth / 1
-      return CGSize(width: cellViewWidth, height: .point300)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-      UIEdgeInsets(top: .point0, left: .point10, bottom: .point0, right: .point10)
-    }
+private func createDogsLayout() -> UICollectionViewCompositionalLayout {
+    let item: NSCollectionLayoutItem = .configureCollectionLayoutItem(width: .fractionalWidth(.point1 / 1),
+                                                                      height: .fractionalHeight(.point1))
+    item.configureContentInsets(leading: .point8, trailing: .point8)
+    
+    let section: NSCollectionLayoutSection = .sectionWithHorizontalGroup(width: .fractionalWidth(.point1),
+                                                                         height: .absolute(.point300),
+                                                                         item: item)
+    section.interGroupSpacing = .point8
+    section.configureContentInsets(leading: .point12, trailing: .point12)
+    return UICollectionViewCompositionalLayout(section: section)
 }
