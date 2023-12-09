@@ -2,16 +2,15 @@ import Foundation
 import Combine
 
 protocol DogsViewModelProtocol {
-  var state: PassthroughSubject<StateController, Never> { get }
-  var dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol { get }
-  var dogsItemsCount: Int { get }
-  func fetchDogs()
-  func getDogItem(indexPath: IndexPath) -> Dog
-  func getItemDogViewModel(indexPath: IndexPath) -> UiDogModel
+    var state: PassthroughSubject<StateController, Never> { get }
+    var dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol { get }
+    var dogsItemsCount: Int { get }
+    func fetchDogs()
+    func getDogItems() -> [UiDogModel]
 }
 
 class DogsViewModel: DogsViewModelProtocol {
-  
+    
   private var dogItems: [Dog] = []
   var dogsUseCaseProviderProtocol: DogsUseCaseProviderProtocol
   var state: PassthroughSubject<StateController, Never>
@@ -42,15 +41,12 @@ class DogsViewModel: DogsViewModelProtocol {
           state.send(.fail(error: error.localizedDescription))
       }
   }
-
-  func getDogItem(indexPath: IndexPath) -> Dog {
-    dogItems[indexPath.row]
-  }
-
-  func getItemDogViewModel(indexPath: IndexPath) -> UiDogModel {
-    let dogItem = dogItems[indexPath.row]
-    return UiDogModel(dogItem)
-  }
+    
+    func getDogItems() -> [UiDogModel] {
+        dogItems.compactMap { dog in
+            UiDogModel(dog)
+        }
+    }
 }
 
 enum StateController {
