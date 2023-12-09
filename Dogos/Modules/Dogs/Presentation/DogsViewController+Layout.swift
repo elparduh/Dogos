@@ -30,7 +30,7 @@ extension DogsViewController: ViewBuildable {
 
 private func createDogsLayout() -> UICollectionViewCompositionalLayout {
     let item: NSCollectionLayoutItem = .configureCollectionLayoutItem(width: .fractionalWidth(.point1 / 1),
-                                                                height: .fractionalHeight(.point1))
+                                                                      height: .fractionalHeight(.point1))
     item.configureContentInsets(leading: .point8, trailing: .point8)
     
     let section: NSCollectionLayoutSection = .sectionWithHorizontalGroup(width: .fractionalWidth(.point1),
