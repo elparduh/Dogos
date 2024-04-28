@@ -8,5 +8,5 @@ struct Constants {
   static let serverErrorMsg = "Server error"
   static let unknownErrorMsg = "Unknown error"
   static let decodingErrorMsg = "Decoding error"
-  static let title = "Dogs We Love"
+  static let title = "The Dogs We Love"
 }
